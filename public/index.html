@@ -2,8 +2,10 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <script src="./bundle.js" defer></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+    <meta name="referrer" content="no-referrer"/>
     <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +14,41 @@
 </head>
 
 <body>
-    <header class="navbar"></header>
+    <header class="navbar">The Best Trip Planner</header>
     <div id="main-area">
         <div id="map"> </div>
         <div id="search">
-            <div id="listplaces">list places</div>
-            <div id="itinerary">itinerary</div>
+            <div id="listplaces">
+                <h3>Hotels</h3>
+                <form action="bundle:buildMarker('hotel', [-87.641, 41.895])">
+                        <select>
+                                <option value="hyatt">Hyatt Regency</option>
+                                <option value="saab">Saab</option>
+                                <option value="opel">Opel</option>
+                                <option value="audi">Audi</option>
+                        </select>
+                        <button type="submit">Submit</button>
+                </form>
+
+                <h3>Restaurants</h3>
+                <select>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                </select>
+                <h3>Things To Do</h3>
+                <select>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                </select>
+            </div>
+            <div id="itinerary">
+                <h3>Itinerary</h3>
+
+            </div>
         </div>
     </div>
 </body>

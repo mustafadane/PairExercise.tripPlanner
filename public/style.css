@@ -22,8 +22,13 @@ body {
 
 .navbar {
   display: flex;
-  background-color: red;
-  height: 10vh;
+  background-color: rgb(128, 90, 90);
+  height: 7vh;
+  font-family: 'Lobster', cursive;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 5vmax;
 }
 
 #main-area {
@@ -34,12 +39,30 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
+
 }
 
 #listplaces {
   background-color: green;
+  padding-left: 3%;
+  font-family: 'Lobster', cursive;
+
 }
 
 #itinerary {
   background-color: blue;
+  padding-left: 3%;
+  font-family: 'Lobster', cursive;
+}
+
+@media(max-width: 600px){
+    body {
+
+    }
+    #main-area {
+        flex-direction: column;
+    }
+    #map {
+        height: 50vh;
+    }
 }
