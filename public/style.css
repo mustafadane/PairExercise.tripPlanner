@@ -9,13 +9,37 @@ body {
 }
 
 #map {
+  flex: 3;
   height: 100vh;
-  width: 100vw;
 }
 
-.marker {
+.marker1 {
   width: 32px;
   height: 39px;
   background-color: black;
   /* background-image: url(http://i.imgur.com/WbMOfMl.png); */
+}
+
+.navbar {
+  display: flex;
+  background-color: red;
+  height: 10vh;
+}
+
+#main-area {
+  display: flex;
+}
+
+#search {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#listplaces {
+  background-color: green;
+}
+
+#itinerary {
+  background-color: blue;
 }

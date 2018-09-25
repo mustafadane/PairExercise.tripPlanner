@@ -1,7 +1,7 @@
 console.log('Index.js is working');
 
 const mapboxgl = require('mapbox-gl');
-const buildMarker = require('./marker')
+const buildMarker = require('./marker');
 
 mapboxgl.accessToken =
   'pk.eyJ1IjoiY29sZGJyZXciLCJhIjoiY2ptaTRvcXQxMDE3azNrbW84a3JhdXl3cCJ9.F6nKu-kqSY6HwgosMeVR9w';
@@ -13,10 +13,9 @@ const map = new mapboxgl.Map({
   style: 'mapbox://styles/mapbox/streets-v10', // mapbox has lots of different map styles available.
 });
 
-const marker = buildMarker('activity', [-87.641, 41.895])
+const marker = buildMarker('hotel', [-87.641, 41.895]);
 
-marker.addTo(map)
-
+marker.addTo(map);
 
 // let markerDomEl = document.createElement('div');
 // //markerDomEl.className = 'marker';
